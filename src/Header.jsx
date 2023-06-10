@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Header(props) {
+function Header({username, color}) {
   return (
     <div className='header-container'>
-    <h1>Wellcome {props.username}</h1>
+    <h1>Wellcome {username} your favourite color is : {color}</h1>
     </div>
   )
 }

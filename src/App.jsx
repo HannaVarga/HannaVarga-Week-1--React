@@ -12,8 +12,8 @@ const yourname = "Dave"
   return (
     
       <div className='App'>
-       <Header username={myname}/>
-       <Header username={yourname} />
+       <Header username={myname} color="pink" />
+       <Header username={yourname} color="green"  />
        <p>Today is {day}</p>
        <Hompage />
        <Footer />
