@@ -3,18 +3,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.header-container {
-    color: brown;
-    background-color: aqua;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-container {
-    color: brown;
-    background-color: aqua;
-    font-weight: bold;
-}
