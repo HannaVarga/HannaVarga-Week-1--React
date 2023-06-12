@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.css'
-import { usersData } from './../../utils/users';
+import { userData } from './../../utils/users';
 
-function Header({userData , setUsers}) {
+function Header({userData , setUser}) {
   // create state for textbox input
   const[country, setCountry] = React.useState('')
 
@@ -16,14 +16,14 @@ function Header({userData , setUsers}) {
     console.log(country)
     // filter userData based on country
     // set users to this result
-  setUsers(usersData.filter(item=> item.country.toLowerCase() === country.toLowerCase()))
+  setUser(userData.filter(item=> item.country.toLowerCase() === country.toLowerCase()))
   // clear textbox
   setCountry('')
   }
   const handleShow =() => {
    console.log('show all')
   //  set users to userData
-   setUsers(usersData)
+   setUser(userData)
   }
   return (
     <div className='header-container'>
