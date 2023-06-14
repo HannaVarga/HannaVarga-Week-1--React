@@ -1,7 +1,7 @@
 import React from 'react'
 import './PersonCard.css'
 
-function PersonCard(person) {
+function PersonCard({person}) {
   return (
     <div className='person-card'>
         <img src={person.imageUrl}/>
@@ -12,3 +12,4 @@ function PersonCard(person) {
 }
 
 export default PersonCard
+
